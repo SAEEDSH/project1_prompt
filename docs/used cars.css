@@ -1,0 +1,132 @@
+* {
+box-sizing: border-box;
+}
+.navigation{
+padding: 5px 0;
+background-color: gray;
+}
+.navigation_content{
+display: grid;
+grid-template-columns: 1fr 2fr;
+height:100px;
+}
+
+.navigation #logo img {
+width: 200px;
+height: 100px;
+float: left;
+}
+nav{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+text-transform: uppercase;
+}
+.navigation nav a{
+padding: 0 20px;
+display: block;
+color: black;
+text-decoration: none;
+}
+
+.navigation nav a:last-child{
+
+border-radius: 10px;
+padding: 15px 10px;
+}
+
+body {
+background-color: rgb(63, 154, 177);
+padding: 10px;
+font-family: Arial;
+
+}
+.main {
+max-width: 2000px;
+margin: auto;
+}
+
+h1 {
+font-size: 50px;
+word-break: break-all;
+color: rgb(122, 115, 223);
+}
+h2 {
+    color: rgb(142, 206, 171);
+}
+
+p {
+    color: rgb(204, 230, 132);
+}
+.row {
+margin: 8px -16px;
+}
+
+
+.row,
+.row > .column {
+padding: 8px;
+}
+
+
+.column {
+float: left;
+width: 25%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.content {
+background-color: white;
+padding: 15px;
+
+}
+
+
+@media screen and (max-width: 900px) {
+.column {
+    width: 50%;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+}
+}
+footer div {
+width: 297px;
+margin: 0 auto;
+
+    
+}
+footer div ul {
+    list-style: none;
+}
+footer div ul li {
+   display: inline;
+   margin: 16px 7px 0 0;
+}
+footer div ul li a {
+    color: rgb(105, 184, 157);
+    font-family: 'consola';
+    font-size: 11pt;
+    text-decoration: none;
+}
+footer .copyright p {
+    width: 170px;
+    margin: 0 auto;
+    color: rgb(228, 104, 104);
+    font-family: 'consola';
+    font-size: 9pt;
+    margin-top: 5px;
+ }
+ footer .copyright p a {
+     text-decoration: none;
+     color: rgb(233, 204, 73);
+ }

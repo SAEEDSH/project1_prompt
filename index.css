@@ -1,0 +1,155 @@
+
+* { box-sizing: border-box; margin-top: 0; }
+.navigation{
+  padding: 5px 0;
+  background-color: gray;
+}
+.navigation_content{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height:105px;
+}
+
+.navigation #logo img {
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navigation nav a{
+  padding: 0 20px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.navigation nav a:last-child{
+
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    outline: 3px solid white;
+    outline-offset: .25em;
+    display: inline-block;
+    margin: 0.25em 0 0.5em;
+    background-color: none;
+
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  
+}
+
+.btn-1{
+  display: inline-block;
+  padding: .4em 1.7em;
+  background: rgb(19, 83, 179);
+  color : rgb(34, 33, 33);
+  font-weight : 500;
+  text-decoration: none;
+  
+}
+.btn {
+  display: inline-block;
+  padding: .7em .7em;
+  background: rgb(115, 128, 0);
+  color : black;
+  font-weight : 600;
+  text-decoration: none;
+}
+a:hover{
+  background: (blue, 10%);
+}
+
+.smoke {
+  background-color: #4f4f4f;
+  background-image: url("https://vanda-production-assets.s3.amazonaws.com/2019/11/22/10/25/00/1468ea2b-78ad-495a-949b-ce5fd813ce5b/960.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 50vh;
+  padding: 0.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sales {
+  padding: 12vh 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@media (min-width: 40rem) {
+  .sales {
+    flex-direction: row;
+  }
+}
+
+.sale {
+  flex-basis: 30%;
+}
+
+.cta {
+  background-image: url("https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/badge-buying-guide-hero-%281%29.jpg");
+  background-size: cover;
+  padding: 10vh 0;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0%;
+}
+footer div {
+  width: 297px;
+  margin: 0 auto;
+
+    
+}
+footer div ul {
+  list-style: none;
+}
+footer div ul li {
+  display: inline;
+  margin: 16px 7px 0 0;
+}
+footer div ul li a {
+  text-decoration: none;
+  color: rgb(105, 184, 157);
+  font-family: 'consola';
+  font-size: 11pt;
+  
+}
+footer .copyright p {
+  width: 170px;
+  margin: 0 auto;
+  color: rgb(228, 104, 104);
+  font-family: 'consola';
+  font-size: 9pt;
+  margin-top: 5px;
+}
+footer .copyright p a {
+    text-decoration: none;
+    color: rgb(233, 204, 73);
+}
